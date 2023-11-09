@@ -15,6 +15,7 @@
 			} else $_GET['p']=1;
 		} else $_GET['p']=1;
 		
+		$q['currency'] = 'PLN';
 		$q['per_page'] = Flight::getConfig('items_accuracy');
 		$q['page'] = (int)(($_GET['p']*Flight::getConfig('items_per_page'))/Flight::getConfig('items_accuracy')) + 1;
 		
@@ -55,6 +56,12 @@
 			} elseif($_GET['order'] == 'unfav') {
 				Flight::requireFunction('fav_sort');
 				$arr['items'] = Flight::fav_sort($arr['items']);
+			} elseif($_GET['order'] == 'price_high_to_low') {
+				Flight::requireFunction('price_sort');
+				$arr['items'] = Flight::price_sort($arr['items'], false);
+			} elseif($_GET['order'] == 'price_low_to_high') {
+				Flight::requireFunction('price_sort');
+				$arr['items'] = Flight::price_sort($arr['items']);
 			}
 		}
 		

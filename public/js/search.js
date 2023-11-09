@@ -1,10 +1,10 @@
 var search_page = 1;
 var search_end = false;
 var search_loadingPosts = false;  // Dodaj zmienną do śledzenia, czy już trwa ładowanie
+var searchParams2 = '';
 search();
 function reloadSearch() {
-	document.body.scrollTop = 0; // For Safari
-	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	window.scrollTo({top: 0, behavior: 'smooth'});
 	search_loadingPosts = false;
 	search_end = false;
 	search_page = 1; // Resetuj wartość search_page
@@ -12,6 +12,42 @@ function reloadSearch() {
 	document.getElementById("search").innerHTML = ''; // Wyczyść wyniki wyszukiwania przed ponownym ładowaniem
 	search();
 }
+
+function addParam(searchParams, fieldId, paramName) {
+	if(document.getElementById(fieldId)) {
+		var fieldValue = document.getElementById(fieldId).value;
+		if(fieldValue.trim() !== "")
+			searchParams.append(paramName, fieldValue);
+	}
+	return searchParams;
+}
+
+function addParam2(searchParams2, fieldId, paramName) {
+	if(document.getElementById(fieldId)) {
+		var field = document.getElementById(fieldId);
+		if(field.checked == true) {
+			searchParams2 = searchParams2 + '&' + paramName + '=' + field.value;
+		}
+	}
+	return searchParams2;
+}
+
+function addFilterCollection(searchParams2, className, paramName) {
+	const collection = document.getElementsByClassName(className);
+	for (let i = 0; i < collection.length; i++) {
+		if(collection[i].checked == true) {
+			searchParams2 = searchParams2 + '&' + paramName + '=' + collection[i].value;
+		}
+	}
+	return searchParams2;
+}
+
+/*
+const collection = document.getElementsByClassName("example");
+for (let i = 0; i < collection.length; i++) {
+  collection[i].style.backgroundColor = "red";
+}
+*/
 
 function search() {
     if(search_loadingPosts)
@@ -25,17 +61,17 @@ function search() {
 
 	// Utwórz obiekt URLSearchParams
 	var searchParams = new URLSearchParams();
-
-	// Dodaj parametry do obiektu URLSearchParams
-	if (search_text.trim() !== "") {
-		searchParams.append("search_text", search_text);
-	}
+	
+	searchParams = addParam(searchParams, 'search_text', 'search_text');
+	searchParams = addParam(searchParams, 'price_from', 'price_from');
+	searchParams = addParam(searchParams, 'price_to', 'price_to');
+	searchParams = addParam(searchParams, 'order', 'order');
 	searchParams.append("p", search_page);
-
-/*
-	if (category !== "") {
-		searchParams.append("category", category);
-	}*/
+	searchParams2 = searchParams.toString();
+	searchParams2 = addFilterCollection(searchParams2, 'filter_colors', 'color_ids[]');
+	//tutaj 3ba dodać kolejne klasy fitrowania
+	
+	//alert(searchParams2);
 	
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
@@ -51,7 +87,7 @@ function search() {
             search_loadingPosts = false;  // Ładowanie się zakończyło
         }
     };
-    xhr.open("GET", search_url + searchParams.toString() + '&p=' + search_page, true);
+    xhr.open("GET", search_url + searchParams2, true);
     xhr.send();
 }
 window.onscroll = function(ev) {
