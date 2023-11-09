@@ -4,7 +4,6 @@
 		$items = Flight::get_search_data();
 		if($items !== false) {
 			Flight::requireFunction('formatCurrency');
-			Flight::requireFunction('getLand');
 			foreach($items['items'] as $item) {
 				Flight::render('single_item', ['item'=>$item]);
 			}
