@@ -10,7 +10,7 @@
 						<i class="fa-solid fa-heart"></i> <?php print($item['favourite_count']); ?>
 						<i class="fa-solid fa-maximize ms-3"></i> <?php print($item['size_title']); ?>
 						<span class="d-block d-md-inline text-transform-none">
-						<i class="fa-solid fa-award ms-3"></i> item.brand</span>
+						<i class="fa-solid fa-award ms-3"></i> <?php print($item['brand_title']); ?></span>
 					</div>
 					<div class="h6 text-transform-none">
 						Możliwa wymiana: <?php print(empty($item['is_for_swap']) ? 'Nie' : 'Tak'); ?> 
