@@ -1,0 +1,29 @@
+main > .container {
+  padding: 60px 15px 0;
+}
+
+.nav-link,a.btn:hover,a.page-link:hover,a.navbar-brand:hover,a.dropdown-item {
+	text-decoration: none !important;
+}
+
+a.navbar-brand {
+	transition: 140ms ease-in color;
+}
+a.navbar-brand:hover {
+	color: #726753;
+}
+	
+#mainNav .nav-link.active {
+	background-color: #e0e0e0;
+	border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	#mainNav .nav-link {
+		text-align: center !important;
+		border-bottom: 2px solid #e0e0e0;
+		border-radius: 0 !important;
+	}
+}
+
+.skiptranslate iframe {display:none !important;}
