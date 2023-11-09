@@ -79,27 +79,6 @@
 					<input type="text" class="form-control" id="search_text" placeholder="Czego szukasz?">
 					<label for="search_text">Czego szukasz?</label>
 				</div>
-				<div class="row rounded mb-4 text-dark" style="background: #96f0fb;">
-					<div class="col-12 col-md-4 p-0 d-flex align-items-center justify-content-center position-relative">
-						<img src="https://lkmnieruchomosci.pl/uploads/offers/8/1687259719_9.webp" alt="Zdjęcie mieszkania" class="img-fluid rounded">
-					</div>
-					<div class="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
-						<div class="pt-3 pb-3 pe-3">
-							<h2 class="text-transform-none fw-bold">item.name</h2>
-							<div class="h6 text-transform-none">
-								<i class="fa-solid fa-heart"></i> item.fav
-								<i class="fa-solid fa-maximize ms-3"></i> item.size
-								<span class="d-block d-md-inline text-transform-none">
-								<i class="fa-solid fa-award ms-3"></i> item.brand</span>
-							</div>
-							<div class="h5"><i class="fa-solid fa-money-bill-wave"></i> item.price</div>
-							<div class="mt-4">
-								<button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-heart"></i> Dodaj do ulubionych</button>
-								<button type="button" class="btn btn-dark bg-gradient"><i class="fa-solid fa-shop"></i> Przejdź do oferty</button>
-							</div>
-						</div>
-					</div>
-				</div>
 				<?php
 					print(Flight::msgs());
 					if(isset($content)) print($content);
