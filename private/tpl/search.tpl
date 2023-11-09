@@ -65,9 +65,20 @@
 	</div>
 	-->
 </div>
-
+<div id="zac" class="row d-flex align-items-center my-4">
+	<div class="col-md-6">
+		<img src="<?php print(Flight::getConfig('url')); ?>/public/img/vinter.jpg" class="w-100 rounded-circle box-shadow" alt="">
+	</div>
+	<div class="col-md-6 text-center" style="font-family: Garamond, serif;">
+		<div class="display-4">
+			Bądź <span class="fw-bold" style="color: #007782;">COOL</span> dzięki<br>
+			<img src="<?php print(Flight::getConfig('url')); ?>/public/img/logo.png" alt="Vintuś" style="height:64px;">
+		</div>
+		<div class="h4 text-primary mt-4">Twórz własne kreacje i dziel się nimi!</div>
+	</div>
+</div>
 <div id="search"></div>
-<div class="text-center alert bg-body-secondary h3 fw-normal" id="search_loading">
+<div class="text-center alert bg-body-secondary h3 fw-normal d-none" id="search_loading">
 	<div class="spinner-border" style="width: 3rem;height: 3rem;" role="status">
 		<span class="visually-hidden">Wczytywanie...</span>
 	</div>

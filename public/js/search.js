@@ -2,8 +2,17 @@ var search_page = 1;
 var search_end = false;
 var search_loadingPosts = false;  // Dodaj zmienną do śledzenia, czy już trwa ładowanie
 var searchParams2 = '';
+var noE=false;
 search();
 function reloadSearch() {
+	if(!noE) {
+		document.getElementById("search_loading").classList.remove("d-none");
+		document.getElementById("zac").classList.add("d-none");
+		noE=true;
+	}
+	
+	
+		
 	window.scrollTo({top: 0, behavior: 'smooth'});
 	search_loadingPosts = false;
 	search_end = false;
@@ -83,6 +92,11 @@ function search() {
             } else {
                 search_end = true;
                 document.getElementById("search_loading").innerHTML = 'Wszystkie oferty zostały wyświetlone 😞';
+				if(document.getElementById("search").innerHTML == '') {
+					document.getElementById("zac").classList.remove("d-none");
+					document.getElementById("search_loading").classList.add("d-none");
+					noE=false;
+				}
             }
             search_loadingPosts = false;  // Ładowanie się zakończyło
         }
@@ -90,6 +104,7 @@ function search() {
     xhr.open("GET", search_url + searchParams2, true);
     xhr.send();
 }
+
 window.onscroll = function(ev) {
     if(!search_end) {
         if(window.innerHeight + window.scrollY + 1 >= document.documentElement.scrollHeight) {

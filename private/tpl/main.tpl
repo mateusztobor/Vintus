@@ -36,7 +36,7 @@
 		<header>
 			<nav id="mainNav" class="navbar bg-light navbar-expand-xl fixed-top">
 				<div class="container">
-					<a class="navbar-brand" href="<?php print(Flight::getConfig('url')); ?>/"><img src="<?php print(Flight::getConfig('url')); ?>/public/img/logo.png" alt="LKM Nieruchomości" style="height:32px;"></a>
+					<a class="navbar-brand" href="<?php print(Flight::getConfig('url')); ?>/"><img src="<?php print(Flight::getConfig('url')); ?>/public/img/logo.png" alt="Vintuś" style="height:32px;"></a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Nawigacja">
 						<span class="navbar-toggler-icon"></span>
 					</button>

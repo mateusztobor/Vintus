@@ -15,7 +15,6 @@
 			} else $_GET['p']=1;
 		} else $_GET['p']=1;
 		
-		$q['currency'] = 'PLN';
 		$q['per_page'] = Flight::getConfig('items_accuracy');
 		$q['page'] = (int)(($_GET['p']*Flight::getConfig('items_per_page'))/Flight::getConfig('items_accuracy')) + 1;
 		
