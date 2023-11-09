@@ -1,1 +1,0 @@
-Brak wyników wyszukiwania.

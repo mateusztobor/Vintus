@@ -10,7 +10,9 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="<?php print(Flight::getConfig('url')); ?>/public/img/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="<?php print(Flight::getConfig('url')); ?>/public/img/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="<?php print(Flight::getConfig('url')); ?>/public/img/favicon-16x16.png">
-		<link rel="manifest" href="<?php print(Flight::getConfig('url')); ?>/manifest.json?v=<?php print(Flight::getEnabledApps()['core'][0]['ver']); ?>">
+		<!--
+			<link rel="manifest" href="<?php print(Flight::getConfig('url')); ?>/manifest.json?v=<?php print(Flight::getEnabledApps()['core'][0]['ver']); ?>">
+		-->
 		<link rel="mask-icon" href="<?php print(Flight::getConfig('url')); ?>/public/img/safari-pinned-tab.svg" color="#000000">
 		<link rel="shortcut icon" href="<?php print(Flight::getConfig('url')); ?>/favicon.ico">
 		<meta name="apple-mobile-web-app-title" content="Portal Mieszkańca">
@@ -74,11 +76,7 @@
 			</nav>
 		</header>
 		<main class="flex-shrink-0">
-			<div class="container mt-3">
-				<div class="form-floating mb-3">
-					<input type="text" class="form-control" id="search_text" placeholder="Czego szukasz?">
-					<label for="search_text">Czego szukasz?</label>
-				</div>
+			<div class="container mt-4">
 				<?php
 					print(Flight::msgs());
 					if(isset($content)) print($content);
