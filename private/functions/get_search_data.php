@@ -41,7 +41,7 @@
 			$q = substr_replace($q ,"",-1);
 		}
 		$arr = json_decode(Flight::get_web_page("https://www.vinted.pl/api/v2/catalog/items?".$q, '_vinted_fr_session='.$cookie),true);
-		
+		$_SESSION['items'] = $arr['items'];
 		if(!is_array($arr))
 			return false;
 		if(!isset($arr['items']))

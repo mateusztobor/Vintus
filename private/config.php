@@ -2,7 +2,7 @@
 	Flight::setConfig('url','http://localhost/vintus');
 	Flight::setConfig('timezone','Europe/Warsaw');
 	Flight::setConfig('items_per_page',5);
-	Flight::setConfig('items_accuracy',2000);
+	Flight::setConfig('items_accuracy',200);
 	Flight::setConfig('database',
 		array(array(
 			'type' => 'mysql',

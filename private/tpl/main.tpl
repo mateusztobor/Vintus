@@ -26,6 +26,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="default">
 		<meta name="robots" content="none">
 		<meta name="AdsBot-Google" content="none">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
 		<!-- preloader -->
 		<link href="<?php print(Flight::getConfig('url')); ?>/public/css/preloader.min.css" rel="preload" as="style" onload="this.rel='stylesheet'">
 		<noscript><link href="<?php print(Flight::getConfig('url')); ?>/public/css/preloader.min.css" rel="stylesheet"></noscript>
@@ -47,17 +48,14 @@
 									<a class="nav-link<?php Flight::checkCurrentApp('/start',' active'); ?>" aria-current="page" href="<?php print(Flight::getConfig('url')); ?>/"><i class="fa-solid fa-magnifying-glass"></i> Szukaj produktów</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link<?php Flight::checkCurrentApp('/start2',' active'); ?>" aria-current="page" href="<?php print(Flight::getConfig('url')); ?>/"><i class="fa-solid fa-heart"></i> Moje ulubione</a>
+									<a class="nav-link<?php Flight::checkCurrentApp('/kreacje',' active'); ?>" aria-current="page" href="<?php print(Flight::getConfig('url')); ?>/<?php print(Flight::isAuthorized('logged') ? 'moje-kreacje' : 'logowanie'); ?>"><i class="fa-solid fa-person-dress-burst"></i> Moje kreacje</a>
 								</li>
-								<?php if(Flight::isAuthorized('logged')) { ?>
-								
-								<?php } ?>
 							</ul>
 							<div class="navbar-text d-flex justify-content-center">
 								<?php if(Flight::isAuthorized('logged')) { ?>
 									<div class="dropdown d-block d-lg-inline-block">
 										<button class="btn btn-sm btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-											<i class="fa-regular fa-circle-user"></i> <?php print(Flight::user('mail')); ?>
+											<i class="fa-regular fa-circle-user"></i> <?php print(Flight::user('nick')); ?>
 										</button>
 										<ul class="dropdown-menu">
 											<li><a class="dropdown-item" href="<?php print(Flight::getConfig('url')); ?>/zmien-haslo"><i class="fa-solid fa-key"></i> Zmień hasło</a></li>
@@ -66,8 +64,8 @@
 									</div>
 								<?php } else { ?>
 									<div class="btn-group">
-									<a class="btn btn-outline-info" aria-current="page" href="<?php print(Flight::getConfig('url')); ?>/"><i class="fa-solid fa-right-to-bracket"></i> Logowanie</a>
-									<a class="btn btn-info" aria-current="page" href="<?php print(Flight::getConfig('url')); ?>/"><i class="fa-solid fa-user-plus"></i> Stwórz konto</a>
+									<a href="<?php print(Flight::getConfig('url')); ?>/logowanie" class="btn btn-outline-info" aria-current="page" href="<?php print(Flight::getConfig('url')); ?>/"><i class="fa-solid fa-right-to-bracket"></i> Logowanie</a>
+									<a href="<?php print(Flight::getConfig('url')); ?>/rejestracja" class="btn btn-info" aria-current="page" href="<?php print(Flight::getConfig('url')); ?>/"><i class="fa-solid fa-user-plus"></i> Stwórz konto</a>
 									</div>
 								<?php } ?>
 							</div>

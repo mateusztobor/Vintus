@@ -1,0 +1,2 @@
+login: test@vintus.com
+hasło: test

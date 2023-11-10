@@ -77,6 +77,31 @@
 		<div class="h4 text-primary mt-4">Twórz własne kreacje i dziel się nimi!</div>
 	</div>
 </div>
+<a role="button" class="text-dark" data-bs-toggle="modal" data-bs-target="#itemModal" onclick="loadItem(123,'test');">123 test</a>
+<a role="button" class="text-dark" data-bs-toggle="modal" data-bs-target="#itemModal" onclick="loadItem(666,'ave');">ave</a>
+<div class="modal fade modal-lg" id="itemModal" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog modal-fullscreen modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Test</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
+			</div>
+			<div class="modal-body">
+				<div id="test"></div>
+				<label for="baskets" class="form-label">Wybierz kreację do której dodać przedmiot</label>
+				<select class="form-select" id="baskets" data-choice="select-one">
+					<option value="0">Globalnie</option>
+					<option value="1">cośtam</option>
+					<option value="2">fajnie</option>
+				</select>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Zamknij</button>
+				<button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Dodaj przedmiot do kreacji</button>
+			</div>
+		</div>
+	</div>
+</div>
 <div id="search"></div>
 <div class="text-center alert bg-body-secondary h3 fw-normal d-none" id="search_loading">
 	<div class="spinner-border" style="width: 3rem;height: 3rem;" role="status">
@@ -88,3 +113,15 @@
 	var search_url = '<?php print(Flight::getConfig('url')); ?>/search?';
 </script>
 <script src="<?php print(Flight::getConfig('url')); ?>/public/js/search.js"></script>
+<script>
+	var itemData = [0,''];
+	function loadItem(a,b) {
+		itemData = [a,b];
+		document.getElementById("test").innerHTML = itemData;
+	}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+<script> 
+	const element = document.getElementById('baskets');
+	const choices = new Choices(element);
+</script>

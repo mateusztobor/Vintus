@@ -7,7 +7,7 @@
 				Flight::render('main', ['tpl'=>'login']);
 		}
 		private function form() {
-			//$c='tester';
+			//$c='test';
 			//$c= password_hash($c.Flight::getConfig('password_hash'), PASSWORD_DEFAULT);
 			//exit($c);
 			$warning=false;
@@ -30,6 +30,7 @@
 						$user=$user[0];
 						if(password_verify((Flight::request()->data->login_password.Flight::getConfig('password_hash')),$user['password'])) {
 							Flight::msg_add('success', 'Zalogowano pomyślnie.');
+							Flight::requireFunction('session_register');
 							Flight::session_register($user['user_id']);
 							$this->view=false;
 						}

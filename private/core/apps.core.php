@@ -31,36 +31,6 @@
 			}
 		}
 	});
-	Flight::map('getPagination', function($page,$limit){
-			$pagination['last'] = $limit;
-			if($limit < 3) {
-				if($limit < 2) {
-					$pagination['pages'] = [1];
-					$pagination['arr'] = [false,false];
-				}
-				else {
-					$pagination['pages'] = [1,2];
-					if($page==1)
-						$pagination['arr'] = [false,true];
-					else
-						$pagination['arr'] = [true,false];
-				}
-			} else {
-				if(($page-1) < 1) {
-					$pagination['pages'] = [$page,$page+1,$page+2];
-					$pagination['arr'] = [false,true];
-				}
-				elseif(($page+1) > $limit) {
-					$pagination['pages'] = [$page-2,$page-1,$page];
-					$pagination['arr'] = [true,false];
-				}
-				else {
-					$pagination['pages'] = [$page-1,$page,$page+1];
-					$pagination['arr'] = [true,true];
-				}
-			}
-			return $pagination;
-	});
 	Flight::map('runApps', function(){
 		$ini = parse_ini_file(dirname(__DIR__, 1).DIRECTORY_SEPARATOR.'apps'.DIRECTORY_SEPARATOR."enabled_apps.ini", false);
 		$app_path = __DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'apps'.DIRECTORY_SEPARATOR;

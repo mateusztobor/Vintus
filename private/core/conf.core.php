@@ -26,24 +26,10 @@
 		$conf[$field][$key] = $value;
 		Flight::set(md5('system.config'),$conf);
 	});
-	Flight::map('addAppsDynData', function($appID,$appContent) {
-		if(Flight::has(md5('system.appsdyndata')))
-			$ADD = Flight::get(md5('system.appsdyndata'));
-		$ADD[0][] = $appID;
-		$ADD[1][] = $appContent;
-		Flight::set(md5('system.appsdyndata'),$ADD);
-	});
-	Flight::addAppsDynData('{url}', Flight::getConfig('url'));
-	Flight::map('getAppsDynData', function() {
-		if(Flight::has(md5('system.appsdyndata')))
-			return Flight::get(md5('system.appsdyndata'));
-		return [0=>null,1=>null];
-	});
 	require dirname(__DIR__, 1).DIRECTORY_SEPARATOR.'config.php';
 	//security
-	Flight::setConfig('session_name',md5('HJYI^C!p+d!3$J1'));
-	Flight::setConfig('password_hash',md5('l4wE81y+fltdK,E'));
-	Flight::setConfig('cron_key','_jt4^1Z6dGu');
+	Flight::setConfig('session_name',md5('aqu1@sdf'));
+	Flight::setConfig('password_hash',md5('v1!n915GhEF#$'));
 	//others
 	Flight::set('flight.base_url', Flight::getConfig('url'));
 	Flight::set('flight.case_sensitive', true);
