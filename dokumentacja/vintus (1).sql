@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 11 Lis 2023, 00:45
+-- Czas generowania: 15 Lis 2023, 21:53
 -- Wersja serwera: 10.4.22-MariaDB
 -- Wersja PHP: 8.1.2
 
@@ -29,9 +29,18 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `baskets` (
   `basket_id` bigint(20) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `user_id` bigint(20) NOT NULL
+  `name` varchar(128) NOT NULL,
+  `user_id` bigint(20) NOT NULL,
+  `lastmod` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Zrzut danych tabeli `baskets`
+--
+
+INSERT INTO `baskets` (`basket_id`, `name`, `user_id`, `lastmod`) VALUES
+(2, 'test 2', 1, '2023-11-15'),
+(3, '56', 1, '2023-11-15');
 
 -- --------------------------------------------------------
 
@@ -42,20 +51,16 @@ CREATE TABLE `baskets` (
 CREATE TABLE `baskets_items` (
   `item_id` bigint(20) NOT NULL,
   `item_vid` bigint(20) NOT NULL,
-  `basket_id` bigint(20) NOT NULL,
-  `user_id` bigint(20) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `price` decimal(10,2) NOT NULL,
-  `fee` decimal(10,2) NOT NULL,
-  `currency` varchar(3) NOT NULL,
-  `hearts` bigint(20) NOT NULL,
-  `size` varchar(32) NOT NULL,
-  `brand` varchar(255) NOT NULL,
-  `swap` tinyint(1) NOT NULL,
-  `seller_type` tinyint(1) NOT NULL,
-  `url` varchar(512) NOT NULL,
-  `picture` varchar(512) NOT NULL
+  `basket_id` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Zrzut danych tabeli `baskets_items`
+--
+
+INSERT INTO `baskets_items` (`item_id`, `item_vid`, `basket_id`) VALUES
+(3, 3762942925, 3),
+(5, 3751094659, 3);
 
 -- --------------------------------------------------------
 
@@ -93,7 +98,6 @@ ALTER TABLE `baskets`
 --
 ALTER TABLE `baskets_items`
   ADD PRIMARY KEY (`item_id`),
-  ADD KEY `user_id` (`user_id`),
   ADD KEY `basket_id` (`basket_id`);
 
 --
@@ -109,16 +113,22 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT dla tabeli `baskets`
+--
+ALTER TABLE `baskets`
+  MODIFY `basket_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT dla tabeli `baskets_items`
 --
 ALTER TABLE `baskets_items`
-  MODIFY `item_id` bigint(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `item_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT dla tabeli `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Ograniczenia dla zrzutów tabel
@@ -134,7 +144,6 @@ ALTER TABLE `baskets`
 -- Ograniczenia dla tabeli `baskets_items`
 --
 ALTER TABLE `baskets_items`
-  ADD CONSTRAINT `baskets_items_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `baskets_items_ibfk_2` FOREIGN KEY (`basket_id`) REFERENCES `baskets` (`basket_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
