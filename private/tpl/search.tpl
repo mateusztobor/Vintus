@@ -90,7 +90,7 @@
 				<?php if(count($baskets) == 0) { ?>
 					<div class="alert alert-warning">Wygląda na to, że nie utworzyłeś jeszcze żadnej kreacji.</div>
 				<?php } else { ?>
-					<select class="form-select" id="baskets" data-choice="select-one">
+					<select class="form-select" id="basket_id" data-choice="select-one">
 						<option value="">Wybierz kreację</option>
 						<?php foreach($baskets as $basket) { ?>
 							<option value="<?php print($basket['basket_id']); ?>"><?php print($basket['name']); ?></option>
@@ -99,7 +99,7 @@
 				<?php } ?>
 				<div class="btn-group w-100">
 					<button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Anuluj</button> 
-					<button type="button" class="btn btn-success" data-bs-dismiss="modal"><i class="fa-solid fa-plus"></i> Dodaj przedmiot do kreacji</button>
+					<button type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="addItem();"><i class="fa-solid fa-plus"></i> Dodaj przedmiot do kreacji</button>
 				</div>
 			</div>
 		</div>
@@ -117,12 +117,35 @@
 	function setItem(a) {
 		document.getElementById("item_id").value = a;
 	}
-	
+	function addItem() {
+		var item_id = document.getElementById('item_id').value;
+		var basket_id = document.getElementById('basket_id').value;
+		var formData = new FormData();
+		formData.append('basket_id', basket_id);
+		formData.append('item_id', item_id);
+		var xhr = new XMLHttpRequest();
+		xhr.open('POST', '<?php print(Flight::getConfig('url')); ?>/ajax/addItem', true);
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState === XMLHttpRequest.DONE) {
+				if (xhr.status === 200) {
+					try {
+						var response = JSON.parse(xhr.responseText);
+						if (!response.success)
+							alert('Błąd systemu.');
+					} catch (error) {
+						alert('Błąd systemu.');
+					}
+				} else
+					alert('Błąd systemu.');
+			}
+		};
+		xhr.send(formData);
+	}
 	//var group = document.getElementById('post_group').value;
 </script>
 <script src="<?php print(Flight::getConfig('url')); ?>/public/js/search.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
 <script> 
-	const element = document.getElementById('baskets');
+	const element = document.getElementById('basket_id');
 	const choices = new Choices(element);
 </script>
