@@ -18,6 +18,27 @@
 <?php if($x > 0) { ?>
 	<div class="alert alert-info"><?php print($x); ?> przedmiotów nie zostało wyświetlonych, ponieważ zostały one usunięte z Vinted.</div>
 <?php } ?>
+
+<div class="my-3 py-3 rounded" style="background:#dedede;">
+	<div class="text-center lh-sm mb-3">
+		<i class="fa-solid fa-share"></i><br>Kreacja się spodobała?<br>Udostępnij ją swoim znajomym!
+	</div>
+	<div class="d-flex justify-content-center a2a_kit a2a_kit_size_32 a2a_default_style">
+		<!-- AddToAny BEGIN -->
+		<a class="a2a_button_facebook"></a>
+		<a class="a2a_button_facebook_messenger"></a>
+		<a class="a2a_button_twitter"></a>
+		<a class="a2a_button_copy_link"></a>
+		<a class="a2a_button_email"></a>
+		<a class="a2a_button_sms"></a>
+	</div>
+	<script>
+	var a2a_config = a2a_config || {};
+	a2a_config.locale = "pl";
+	</script>
+	<script async src="https://static.addtoany.com/menu/page.js"></script>
+	<!-- AddToAny END -->
+</div>
 <h4>Komentarze</h4>
 <div class="fb-comments mx-auto" data-href="<?php print(Flight::getConfig('url')); ?>/kreacja/<?php print($basket['basket_id']); ?>" data-width="" data-numposts="10"></div>
 
