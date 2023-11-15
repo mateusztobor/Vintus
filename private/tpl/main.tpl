@@ -7,16 +7,11 @@
 		<link href="<?php print(Flight::getConfig('url')); ?>/public/css/bootstrap.min.css?v=<?php print(Flight::getEnabledApps()['core'][0]['ver']); ?>" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 		<link href="<?php print(Flight::getConfig('url')); ?>/public/css/theme.css?v=<?php print(Flight::getEnabledApps()['core'][0]['ver']); ?>" rel="stylesheet">
-		<link rel="apple-touch-icon" sizes="180x180" href="<?php print(Flight::getConfig('url')); ?>/public/img/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="<?php print(Flight::getConfig('url')); ?>/public/img/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="<?php print(Flight::getConfig('url')); ?>/public/img/favicon-16x16.png">
-		<!--
 			<link rel="manifest" href="<?php print(Flight::getConfig('url')); ?>/manifest.json?v=<?php print(Flight::getEnabledApps()['core'][0]['ver']); ?>">
-		-->
 		<link rel="mask-icon" href="<?php print(Flight::getConfig('url')); ?>/public/img/safari-pinned-tab.svg" color="#000000">
 		<link rel="shortcut icon" href="<?php print(Flight::getConfig('url')); ?>/favicon.ico">
-		<meta name="apple-mobile-web-app-title" content="Portal Mieszkańca">
-		<meta name="application-name" content="Portal Mieszkańca">
+		<meta name="apple-mobile-web-app-title" content="VintUŚ">
+		<meta name="application-name" content="VintUŚ">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-config" content="<?php print(Flight::getConfig('url')); ?>/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
@@ -75,6 +70,14 @@
 		</header>
 		<main class="flex-shrink-0">
 			<div class="container mt-4">
+				<div class="alert alert-light mb-3 d-none" id="installApp_prompt">
+					<div class="text-center fw-bold mb-2">
+						Zainstaluj naszą aplikację i bądź jeszcze bardziej COOL!
+					</div>
+					<div class="d-grid">
+						<button id="installApp_btn" class="btn btn-lg btn-outline-success"><i class="fa-solid fa-cloud-arrow-down"></i> Zainstaluj teraz</button>
+					</div>
+				</div>
 				<?php
 					print(Flight::msgs());
 					if(isset($content)) print($content);
@@ -96,5 +99,23 @@
 		<script src="<?php print(Flight::getConfig('url')); ?>/public/js/form-validation.js?v=<?php print(Flight::getEnabledApps()['core'][0]['ver']); ?>"></script>
 		<script src="<?php print(Flight::getConfig('url')); ?>/public/js/tooltips.js?v=<?php print(Flight::getEnabledApps()['core'][0]['ver']); ?>"></script>
 		<script src="<?php print(Flight::getConfig('url')); ?>/public/js/toasts.js?v=<?php print(Flight::getEnabledApps()['core'][0]['ver']); ?>"></script>
+		<script>
+			let installPromptEvent; // Definiujemy zmienną w zakresie globalnym
+
+			window.addEventListener('beforeinstallprompt', (event) => {
+			  installPromptEvent = event; // Przypisujemy zdarzenie do zmiennej w obszarze słuchacza
+			  event.preventDefault();
+			  showInstallButton();
+			});
+
+			function showInstallButton() {
+			  document.getElementById('installApp_prompt').classList.remove("d-none");
+			  document.getElementById('installApp_btn').addEventListener('click', () => {
+				if (installPromptEvent) {
+				  installPromptEvent.prompt();
+				}
+			  });
+			}
+		</script>
 	</body>
 </html>

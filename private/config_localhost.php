@@ -1,15 +1,15 @@
 <?php
-	Flight::setConfig('url','https://vintus.ct8.pl');
+	Flight::setConfig('url','http://localhost/vintus');
 	Flight::setConfig('timezone','Europe/Warsaw');
 	Flight::setConfig('items_per_page',5);
 	Flight::setConfig('items_accuracy',200);
 	Flight::setConfig('database',
 		array(array(
 			'type' => 'mysql',
-			'host' => 'mysql.ct8.pl',
-			'database' => 'm14308_vintus',
-			'username' => 'm14308_vintus',
-			'password' => 'Ab@d0./.%-ewe',
+			'host' => 'localhost',
+			'database' => 'vintus',
+			'username' => 'root',
+			'password' => '',
 			'charset' => 'utf8mb4',
 			'collation' => 'utf8mb4_bin',
 			'port' => 3306,
