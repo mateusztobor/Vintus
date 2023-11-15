@@ -4,6 +4,9 @@
 	
 	<div class="mt-3">
 		<div class="dropdown">
+			<a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Kolor
+			</a>
 			<?php
 				$filter_colors = [
 					//[ID,NAZWA],
@@ -11,9 +14,6 @@
 					[9,'Niebieski'],
 				];
 			?>
-			<a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				Kolor
-			</a>
 			<ul class="dropdown-menu">
 				<?php foreach($filter_colors as $filter) { ?>
 					<li class="py-2 px-1">
@@ -77,27 +77,30 @@
 		<div class="h4 text-primary mt-4">Twórz własne kreacje i dziel się nimi!</div>
 	</div>
 </div>
-<a role="button" class="text-dark" data-bs-toggle="modal" data-bs-target="#itemModal" onclick="loadItem(123,'test');">123 test</a>
-<a role="button" class="text-dark" data-bs-toggle="modal" data-bs-target="#itemModal" onclick="loadItem(666,'ave');">ave</a>
 <div class="modal fade modal-lg" id="itemModal" tabindex="-1" aria-hidden="true">
 	<div class="modal-dialog modal-fullscreen modal-dialog-centered">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title">Test</h5>
+				<h5 class="modal-title">Dodawane przedmiotu do kreacji</h5>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zamknij"></button>
 			</div>
 			<div class="modal-body">
-				<div id="test"></div>
+				<input type="hidden" value="" id="item_id">
 				<label for="baskets" class="form-label">Wybierz kreację do której dodać przedmiot</label>
-				<select class="form-select" id="baskets" data-choice="select-one">
-					<option value="0">Globalnie</option>
-					<option value="1">cośtam</option>
-					<option value="2">fajnie</option>
-				</select>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Zamknij</button>
-				<button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Dodaj przedmiot do kreacji</button>
+				<?php if(count($baskets) == 0) { ?>
+					<div class="alert alert-warning">Wygląda na to, że nie utworzyłeś jeszcze żadnej kreacji.</div>
+				<?php } else { ?>
+					<select class="form-select" id="baskets" data-choice="select-one">
+						<option value="">Wybierz kreację</option>
+						<?php foreach($baskets as $basket) { ?>
+							<option value="<?php print($basket['basket_id']); ?>"><?php print($basket['name']); ?></option>
+						<?php } ?>
+					</select>
+				<?php } ?>
+				<div class="btn-group w-100">
+					<button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i> Anuluj</button> 
+					<button type="button" class="btn btn-success" data-bs-dismiss="modal"><i class="fa-solid fa-plus"></i> Dodaj przedmiot do kreacji</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -111,15 +114,13 @@
 
 <script>
 	var search_url = '<?php print(Flight::getConfig('url')); ?>/search?';
+	function setItem(a) {
+		document.getElementById("item_id").value = a;
+	}
+	
+	//var group = document.getElementById('post_group').value;
 </script>
 <script src="<?php print(Flight::getConfig('url')); ?>/public/js/search.js"></script>
-<script>
-	var itemData = [0,''];
-	function loadItem(a,b) {
-		itemData = [a,b];
-		document.getElementById("test").innerHTML = itemData;
-	}
-</script>
 <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
 <script> 
 	const element = document.getElementById('baskets');

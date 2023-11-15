@@ -1,0 +1,921 @@
+				Array
+(
+    [id] => 3743423292
+    [title] => Kapciuszki dla malucha
+    [brand_id] => 1
+    [size_id] => 586
+    [status_id] => 2
+    [disposal_conditions] => 4
+    [user_id] => 91274666
+    [owner_id] => 
+    [country_id] => 15
+    [catalog_id] => 1661
+    [color1_id] => 27
+    [color2_id] => 
+    [package_size_id] => 1
+    [is_hidden] => 0
+    [is_reserved] => 0
+    [reserved_for_user_id] => 
+    [is_visible] => 1
+    [is_unisex] => 0
+    [is_closed] => 0
+    [active_bid_count] => 0
+    [favourite_count] => 34
+    [view_count] => 50
+    [moderation_status] => 0
+    [last_push_up_at] => 2023-11-11T15:15:02+01:00
+    [description] => Kapciuszki mięciutkie rozmiar 17-18.
+    [package_size_standard] => 1
+    [item_closing_action] => 
+    [related_catalog_ids] => Array
+        (
+        )
+
+    [related_catalogs_enabled] => 
+    [size] => 17
+    [brand] => 
+    [composition] => 
+    [extra_conditions] => 
+    [is_for_sell] => 1
+    [is_for_swap] => 
+    [is_for_give_away] => 
+    [is_handicraft] => 
+    [is_processing] => 
+    [is_draft] => 
+    [label] => 
+    [real_value_numeric] => 
+    [original_price_numeric] => 12.0
+    [currency] => PLN
+    [price_numeric] => 12.0
+    [created_at_ts] => 2023-11-11T15:15:02+01:00
+    [updated_at_ts] => 2023-11-11T22:30:26+01:00
+    [user_updated_at_ts] => 2023-11-11T15:15:02+01:00
+    [photos] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 15354350945
+                    [image_no] => 1
+                    [width] => 600
+                    [height] => 800
+                    [dominant_color] => #284380
+                    [dominant_color_opaque] => #BFC7D9
+                    [url] => https://images1.vinted.net/t/03_01722_WmxvshNPBzaZcpKqW1LBXv7p/f800/1699712102.jpeg?s=d5b6df01937ebfc9677858c1b43c424bbfb9cac0
+                    [is_main] => 1
+                    [thumbnails] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => thumb70x100
+                                    [url] => https://images1.vinted.net/t/03_01722_WmxvshNPBzaZcpKqW1LBXv7p/70x100/1699712102.jpeg?s=a2ffd018740d3f385bf5e1aa30f1e69073decf7e
+                                    [width] => 70
+                                    [height] => 100
+                                    [original_size] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => thumb150x210
+                                    [url] => https://images1.vinted.net/t/03_01722_WmxvshNPBzaZcpKqW1LBXv7p/150x210/1699712102.jpeg?s=304cd067aa26656e2e51f9da6625c33ac11addca
+                                    [width] => 150
+                                    [height] => 210
+                                    [original_size] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [type] => thumb310x430
+                                    [url] => https://images1.vinted.net/t/03_01722_WmxvshNPBzaZcpKqW1LBXv7p/310x430/1699712102.jpeg?s=ecba9168fcbb2450b7227afd0cc70d317dd01e15
+                                    [width] => 310
+                                    [height] => 430
+                                    [original_size] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [type] => thumb428x624
+                                    [url] => https://images1.vinted.net/t/03_01722_WmxvshNPBzaZcpKqW1LBXv7p/f800/1699712102.jpeg?s=d5b6df01937ebfc9677858c1b43c424bbfb9cac0
+                                    [width] => 321
+                                    [height] => 428
+                                    [original_size] => 1
+                                )
+
+                            [4] => Array
+                                (
+                                    [type] => thumb624x428
+                                    [url] => https://images1.vinted.net/t/03_01722_WmxvshNPBzaZcpKqW1LBXv7p/f800/1699712102.jpeg?s=d5b6df01937ebfc9677858c1b43c424bbfb9cac0
+                                    [width] => 468
+                                    [height] => 624
+                                    [original_size] => 1
+                                )
+
+                            [5] => Array
+                                (
+                                    [type] => thumb364x428
+                                    [url] => https://images1.vinted.net/t/03_01722_WmxvshNPBzaZcpKqW1LBXv7p/f800/1699712102.jpeg?s=d5b6df01937ebfc9677858c1b43c424bbfb9cac0
+                                    [width] => 273
+                                    [height] => 364
+                                    [original_size] => 1
+                                )
+
+                        )
+
+                    [high_resolution] => Array
+                        (
+                            [id] => 03_01722_WmxvshNPBzaZcpKqW1LBXv7p
+                            [timestamp] => 1699712102
+                            [orientation] => 
+                        )
+
+                    [is_suspicious] => 
+                    [full_size_url] => https://images1.vinted.net/tc/03_01722_WmxvshNPBzaZcpKqW1LBXv7p/1699712102.jpeg?s=101927e1957c502ebb08d55bca0d37d0dec80c62
+                    [is_hidden] => 
+                    [extra] => Array
+                        (
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [id] => 15354350948
+                    [image_no] => 2
+                    [width] => 360
+                    [height] => 800
+                    [dominant_color] => #393C48
+                    [dominant_color_opaque] => #C4C5C8
+                    [url] => https://images1.vinted.net/t/03_010f7_6muYDw4KJfZsSY53Rji5bzyy/f800/1699712102.jpeg?s=f5cde70e1b7aae7adf662277373aebdb06e7c101
+                    [is_main] => 
+                    [thumbnails] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => thumb70x100
+                                    [url] => https://images1.vinted.net/t/03_010f7_6muYDw4KJfZsSY53Rji5bzyy/70x100/1699712102.jpeg?s=b90d0ec217fd61026067cffe2312924ba1b8d0bc
+                                    [width] => 70
+                                    [height] => 100
+                                    [original_size] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => thumb150x210
+                                    [url] => https://images1.vinted.net/t/03_010f7_6muYDw4KJfZsSY53Rji5bzyy/150x210/1699712102.jpeg?s=4693658eff97608bb6baaa995db59904653b03ca
+                                    [width] => 150
+                                    [height] => 210
+                                    [original_size] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [type] => thumb310x430
+                                    [url] => https://images1.vinted.net/t/03_010f7_6muYDw4KJfZsSY53Rji5bzyy/310x430/1699712102.jpeg?s=962cccb05bf4b59eebfb45edcd3d2482bdbae2da
+                                    [width] => 310
+                                    [height] => 430
+                                    [original_size] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [type] => thumb428x624
+                                    [url] => https://images1.vinted.net/t/03_010f7_6muYDw4KJfZsSY53Rji5bzyy/f800/1699712102.jpeg?s=f5cde70e1b7aae7adf662277373aebdb06e7c101
+                                    [width] => 192
+                                    [height] => 428
+                                    [original_size] => 1
+                                )
+
+                            [4] => Array
+                                (
+                                    [type] => thumb624x428
+                                    [url] => https://images1.vinted.net/t/03_010f7_6muYDw4KJfZsSY53Rji5bzyy/f800/1699712102.jpeg?s=f5cde70e1b7aae7adf662277373aebdb06e7c101
+                                    [width] => 280
+                                    [height] => 624
+                                    [original_size] => 1
+                                )
+
+                            [5] => Array
+                                (
+                                    [type] => thumb364x428
+                                    [url] => https://images1.vinted.net/t/03_010f7_6muYDw4KJfZsSY53Rji5bzyy/f800/1699712102.jpeg?s=f5cde70e1b7aae7adf662277373aebdb06e7c101
+                                    [width] => 163
+                                    [height] => 364
+                                    [original_size] => 1
+                                )
+
+                        )
+
+                    [high_resolution] => Array
+                        (
+                            [id] => 03_010f7_6muYDw4KJfZsSY53Rji5bzyy
+                            [timestamp] => 1699712102
+                            [orientation] => 
+                        )
+
+                    [is_suspicious] => 
+                    [full_size_url] => https://images1.vinted.net/tc/03_010f7_6muYDw4KJfZsSY53Rji5bzyy/1699712102.jpeg?s=57de1641b7dcbe74e5bbf18d500f8bffe1b74069
+                    [is_hidden] => 
+                    [extra] => Array
+                        (
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [id] => 15354350950
+                    [image_no] => 3
+                    [width] => 360
+                    [height] => 800
+                    [dominant_color] => #2F3C61
+                    [dominant_color_opaque] => #C1C5D0
+                    [url] => https://images1.vinted.net/t/01_0029e_4iGVrhJAPPQRLmgVNsZ1ywvk/f800/1699712102.jpeg?s=d6fd72df6e65789283a30445ca90a16951e9dbaf
+                    [is_main] => 
+                    [thumbnails] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => thumb70x100
+                                    [url] => https://images1.vinted.net/t/01_0029e_4iGVrhJAPPQRLmgVNsZ1ywvk/70x100/1699712102.jpeg?s=9863ac2fc3431a2ab1dbc673bf00f8b58b0eead4
+                                    [width] => 70
+                                    [height] => 100
+                                    [original_size] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => thumb150x210
+                                    [url] => https://images1.vinted.net/t/01_0029e_4iGVrhJAPPQRLmgVNsZ1ywvk/150x210/1699712102.jpeg?s=d749e41b32b53b25753e9636489416c1790678d0
+                                    [width] => 150
+                                    [height] => 210
+                                    [original_size] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [type] => thumb310x430
+                                    [url] => https://images1.vinted.net/t/01_0029e_4iGVrhJAPPQRLmgVNsZ1ywvk/310x430/1699712102.jpeg?s=78f9bcc84dacdb3ca7d41146cf06cefd9be0533a
+                                    [width] => 310
+                                    [height] => 430
+                                    [original_size] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [type] => thumb428x624
+                                    [url] => https://images1.vinted.net/t/01_0029e_4iGVrhJAPPQRLmgVNsZ1ywvk/f800/1699712102.jpeg?s=d6fd72df6e65789283a30445ca90a16951e9dbaf
+                                    [width] => 192
+                                    [height] => 428
+                                    [original_size] => 1
+                                )
+
+                            [4] => Array
+                                (
+                                    [type] => thumb624x428
+                                    [url] => https://images1.vinted.net/t/01_0029e_4iGVrhJAPPQRLmgVNsZ1ywvk/f800/1699712102.jpeg?s=d6fd72df6e65789283a30445ca90a16951e9dbaf
+                                    [width] => 280
+                                    [height] => 624
+                                    [original_size] => 1
+                                )
+
+                            [5] => Array
+                                (
+                                    [type] => thumb364x428
+                                    [url] => https://images1.vinted.net/t/01_0029e_4iGVrhJAPPQRLmgVNsZ1ywvk/f800/1699712102.jpeg?s=d6fd72df6e65789283a30445ca90a16951e9dbaf
+                                    [width] => 163
+                                    [height] => 364
+                                    [original_size] => 1
+                                )
+
+                        )
+
+                    [high_resolution] => Array
+                        (
+                            [id] => 01_0029e_4iGVrhJAPPQRLmgVNsZ1ywvk
+                            [timestamp] => 1699712102
+                            [orientation] => 
+                        )
+
+                    [is_suspicious] => 
+                    [full_size_url] => https://images1.vinted.net/tc/01_0029e_4iGVrhJAPPQRLmgVNsZ1ywvk/1699712102.jpeg?s=8544f018c885cf6ea7eedfc47e9f4be4b46ccbf8
+                    [is_hidden] => 
+                    [extra] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [id] => 15354350952
+                    [image_no] => 4
+                    [width] => 360
+                    [height] => 800
+                    [dominant_color] => #313A5C
+                    [dominant_color_opaque] => #C1C4CE
+                    [url] => https://images1.vinted.net/t/03_011b7_T559m7n7GzyArrM5JYcZ7fyA/f800/1699712102.jpeg?s=2dfdb46d22b0ef38ea7fb7cd143aa8806136f44d
+                    [is_main] => 
+                    [thumbnails] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => thumb70x100
+                                    [url] => https://images1.vinted.net/t/03_011b7_T559m7n7GzyArrM5JYcZ7fyA/70x100/1699712102.jpeg?s=2feb8e8883d5e6084b9d06cc6d2c73fd723b6795
+                                    [width] => 70
+                                    [height] => 100
+                                    [original_size] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => thumb150x210
+                                    [url] => https://images1.vinted.net/t/03_011b7_T559m7n7GzyArrM5JYcZ7fyA/150x210/1699712102.jpeg?s=d4f91495e8b1777a3371a799abeae882d107357e
+                                    [width] => 150
+                                    [height] => 210
+                                    [original_size] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [type] => thumb310x430
+                                    [url] => https://images1.vinted.net/t/03_011b7_T559m7n7GzyArrM5JYcZ7fyA/310x430/1699712102.jpeg?s=35fb8799c559e1a04753a5d9ae7f8941c5366ae9
+                                    [width] => 310
+                                    [height] => 430
+                                    [original_size] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [type] => thumb428x624
+                                    [url] => https://images1.vinted.net/t/03_011b7_T559m7n7GzyArrM5JYcZ7fyA/f800/1699712102.jpeg?s=2dfdb46d22b0ef38ea7fb7cd143aa8806136f44d
+                                    [width] => 192
+                                    [height] => 428
+                                    [original_size] => 1
+                                )
+
+                            [4] => Array
+                                (
+                                    [type] => thumb624x428
+                                    [url] => https://images1.vinted.net/t/03_011b7_T559m7n7GzyArrM5JYcZ7fyA/f800/1699712102.jpeg?s=2dfdb46d22b0ef38ea7fb7cd143aa8806136f44d
+                                    [width] => 280
+                                    [height] => 624
+                                    [original_size] => 1
+                                )
+
+                            [5] => Array
+                                (
+                                    [type] => thumb364x428
+                                    [url] => https://images1.vinted.net/t/03_011b7_T559m7n7GzyArrM5JYcZ7fyA/f800/1699712102.jpeg?s=2dfdb46d22b0ef38ea7fb7cd143aa8806136f44d
+                                    [width] => 163
+                                    [height] => 364
+                                    [original_size] => 1
+                                )
+
+                        )
+
+                    [high_resolution] => Array
+                        (
+                            [id] => 03_011b7_T559m7n7GzyArrM5JYcZ7fyA
+                            [timestamp] => 1699712102
+                            [orientation] => 
+                        )
+
+                    [is_suspicious] => 
+                    [full_size_url] => https://images1.vinted.net/tc/03_011b7_T559m7n7GzyArrM5JYcZ7fyA/1699712102.jpeg?s=f002429312c7ac9b9188d9031cb6d83cb083103d
+                    [is_hidden] => 
+                    [extra] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [push_up_interval] => 604800
+    [can_be_sold] => 1
+    [can_feedback] => 
+    [item_reservation_id] => 
+    [receiver_id] => 
+    [promoted_until] => 
+    [vas_gallery_promoted_until] => 
+    [vas_gallery_promoted_created_at] => 
+    [discount_price_numeric] => 
+    [author] => 
+    [book_title] => 
+    [isbn] => 
+    [measurement_width] => 
+    [measurement_length] => 
+    [measurement_unit] => 
+    [transaction_permitted] => 1
+    [video_game_rating_id] => 
+    [item_attributes] => Array
+        (
+        )
+
+    [is_story_uploaded] => 
+    [user] => Array
+        (
+            [id] => 91274666
+            [anon_id] => de6ad6dd-dea2-46cc-aed3-0c87f1119dde
+            [login] => ciucherek
+            [real_name] => 
+            [email] => 
+            [birthday] => 
+            [gender] => F
+            [item_count] => 406
+            [msg_template_count] => 9
+            [given_item_count] => 1068
+            [taken_item_count] => 187
+            [favourite_topic_count] => 0
+            [forum_msg_count] => 0
+            [forum_topic_count] => 0
+            [followers_count] => 104
+            [following_count] => 78
+            [following_brands_count] => 0
+            [positive_feedback_count] => 993
+            [neutral_feedback_count] => 4
+            [negative_feedback_count] => 6
+            [meeting_transaction_count] => 4
+            [account_status] => 0
+            [email_bounces] => 
+            [feedback_reputation] => 1
+            [feedback_count] => 1003
+            [account_ban_date] => 
+            [is_account_ban_permanent] => 
+            [is_forum_ban_permanent] => 
+            [is_on_holiday] => 
+            [is_publish_photos_agreed] => 
+            [expose_location] => 1
+            [third_party_tracking] => 1
+            [default_address] => 
+            [last_loged_on_ts] => 2023-11-11T21:10:47+01:00
+            [city_id] => 14049
+            [city] => Wąchock
+            [country_id] => 15
+            [country_code] => PL
+            [country_iso_code] => PL
+            [country_title] => Poland
+            [contacts_permission] => 
+            [contacts] => 
+            [photo] => Array
+                (
+                    [id] => 90763383
+                    [width] => 780
+                    [height] => 585
+                    [temp_uuid] => 
+                    [url] => https://images1.vinted.net/t/03_01cbe_YWVXS8Hi3qRu6MeRraTWo8qs/f800/1652804516.jpeg?s=552d72b7205603c9128243560a9a235a2fd1b7e6
+                    [dominant_color] => #31abc2
+                    [dominant_color_opaque] => #C1E6ED
+                    [thumbnails] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [type] => thumb310
+                                    [url] => https://images1.vinted.net/t/03_01cbe_YWVXS8Hi3qRu6MeRraTWo8qs/310x310/1652804516.jpeg?s=4e9e44a62959dd9d92a463add669998a41eac4d2
+                                    [width] => 310
+                                    [height] => 310
+                                    [original_size] => 
+                                )
+
+                            [1] => Array
+                                (
+                                    [type] => thumb150
+                                    [url] => https://images1.vinted.net/t/03_01cbe_YWVXS8Hi3qRu6MeRraTWo8qs/150x150/1652804516.jpeg?s=b7ab1e9707fb6ac15fabdf560ff0f58e5d6f2c5f
+                                    [width] => 150
+                                    [height] => 150
+                                    [original_size] => 
+                                )
+
+                            [2] => Array
+                                (
+                                    [type] => thumb100
+                                    [url] => https://images1.vinted.net/t/03_01cbe_YWVXS8Hi3qRu6MeRraTWo8qs/100x100/1652804516.jpeg?s=89d68eb748b1352a0a99774120d4f7b0e61d6f77
+                                    [width] => 100
+                                    [height] => 100
+                                    [original_size] => 
+                                )
+
+                            [3] => Array
+                                (
+                                    [type] => thumb50
+                                    [url] => https://images1.vinted.net/t/03_01cbe_YWVXS8Hi3qRu6MeRraTWo8qs/50x50/1652804516.jpeg?s=828681f9f4760c54244218e2e0fb9f3b36f65dca
+                                    [width] => 50
+                                    [height] => 50
+                                    [original_size] => 
+                                )
+
+                            [4] => Array
+                                (
+                                    [type] => thumb20
+                                    [url] => https://images1.vinted.net/t/03_01cbe_YWVXS8Hi3qRu6MeRraTWo8qs/20x20/1652804516.jpeg?s=8fe1885de8d712d43792e999ab1df55529b82f45
+                                    [width] => 20
+                                    [height] => 20
+                                    [original_size] => 
+                                )
+
+                        )
+
+                    [is_suspicious] => 
+                    [orientation] => 
+                    [high_resolution] => Array
+                        (
+                            [id] => 03_01cbe_YWVXS8Hi3qRu6MeRraTWo8qs
+                            [timestamp] => 1652804516
+                            [orientation] => 
+                        )
+
+                    [full_size_url] => https://images1.vinted.net/tc/03_01cbe_YWVXS8Hi3qRu6MeRraTWo8qs/1652804516.jpeg?s=5fd5f3146da7ebd1e4fd333eee01820a73b9bf7e
+                    [is_hidden] => 
+                    [extra] => Array
+                        (
+                        )
+
+                )
+
+            [path] => /member/91274666-ciucherek
+            [moderator] => 
+            [is_catalog_moderator] => 
+            [is_catalog_role_marketing_photos] => 
+            [hide_feedback] => 
+            [can_post_big_forum_photos] => 
+            [allow_direct_messaging] => 1
+            [bundle_discount] => Array
+                (
+                    [id] => 23509976
+                    [user_id] => 91274666
+                    [enabled] => 1
+                    [minimal_item_count] => 2
+                    [fraction] => 0.1
+                    [discounts] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [minimal_item_count] => 2
+                                    [fraction] => 0.1
+                                )
+
+                            [1] => Array
+                                (
+                                    [minimal_item_count] => 3
+                                    [fraction] => 0.2
+                                )
+
+                            [2] => Array
+                                (
+                                    [minimal_item_count] => 5
+                                    [fraction] => 0.4
+                                )
+
+                        )
+
+                )
+
+            [donation_configuration] => 
+            [fundraiser] => 
+            [business] => 
+            [business_account] => 
+            [has_ship_fast_badge] => 
+            [total_items_count] => 1474
+            [about] => 
+            [verification] => Array
+                (
+                    [email] => Array
+                        (
+                            [valid] => 1
+                            [available] => 1
+                        )
+
+                    [facebook] => Array
+                        (
+                            [valid] => 
+                            [verified_at] => 
+                            [available] => 1
+                        )
+
+                    [google] => Array
+                        (
+                            [valid] => 1
+                            [verified_at] => 2022-05-17T18:27:06+02:00
+                            [available] => 1
+                        )
+
+                    [phone] => Array
+                        (
+                            [valid] => 1
+                            [verified_at] => 2021-09-24T10:02:48+02:00
+                            [available] => 1
+                        )
+
+                )
+
+            [closet_promoted_until] => 
+            [avg_response_time] => 
+            [carrier_ids] => Array
+                (
+                    [0] => 38
+                    [1] => 45
+                    [2] => 46
+                    [3] => 59
+                    [4] => 73
+                    [5] => 79
+                    [6] => 80
+                    [7] => 94
+                    [8] => 95
+                    [9] => 96
+                    [10] => 9
+                    [11] => 10
+                )
+
+            [carriers_without_custom_ids] => Array
+                (
+                    [0] => 38
+                    [1] => 45
+                    [2] => 46
+                    [3] => 59
+                    [4] => 73
+                    [5] => 79
+                    [6] => 80
+                    [7] => 94
+                    [8] => 95
+                    [9] => 96
+                )
+
+            [locale] => pl-fr
+            [updated_on] => 1699712102
+            [is_hated] => 
+            [hates_you] => 
+            [is_favourite] => 
+            [profile_url] => https://www.vinted.pl/member/91274666-ciucherek
+            [share_profile_url] => https://www.vinted.pl/member/91274666-ciucherek
+            [facebook_user_id] => 
+            [is_online] => 
+            [has_promoted_closet] => 
+            [can_view_profile] => 1
+            [can_bundle] => 1
+            [country_title_local] => Polska
+            [last_loged_on] => dziś 21:10
+            [accepted_pay_in_methods] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 1
+                            [code] => CREDIT_CARD
+                            [requires_credit_card] => 1
+                            [event_tracking_code] => cc
+                            [icon] => credit-card
+                            [enabled] => 1
+                            [translated_name] => Karta płatnicza
+                            [note] => Osoba sprzedająca nie zobaczy twoich danych płatniczych.
+                            [method_change_possible] => 1
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 22
+                            [code] => TRUSTLY
+                            [requires_credit_card] => 
+                            [event_tracking_code] => trustly
+                            [icon] => trustly
+                            [enabled] => 1
+                            [translated_name] => Trustly
+                            [note] => Płać bezpośrednio z konta bankowego.
+                            [method_change_possible] => 1
+                        )
+
+                    [2] => Array
+                        (
+                            [id] => 16
+                            [code] => APPLE_PAY
+                            [requires_credit_card] => 
+                            [event_tracking_code] => apple_pay
+                            [icon] => apple-pay
+                            [enabled] => 1
+                            [translated_name] => Apple Pay
+                            [note] => 
+                            [method_change_possible] => 1
+                        )
+
+                    [3] => Array
+                        (
+                            [id] => 17
+                            [code] => GOOGLE_PAY
+                            [requires_credit_card] => 
+                            [event_tracking_code] => google_pay
+                            [icon] => google-pay
+                            [enabled] => 1
+                            [translated_name] => Google Pay
+                            [note] => 
+                            [method_change_possible] => 1
+                        )
+
+                    [4] => Array
+                        (
+                            [id] => 4
+                            [code] => SOFORT
+                            [requires_credit_card] => 
+                            [event_tracking_code] => sofort
+                            [icon] => sofort
+                            [enabled] => 1
+                            [translated_name] => Sofort
+                            [note] => 
+                            [method_change_possible] => 1
+                        )
+
+                    [5] => Array
+                        (
+                            [id] => 10
+                            [code] => MANGOPAY_PAYPAL
+                            [requires_credit_card] => 
+                            [event_tracking_code] => mangopay_paypal
+                            [icon] => paypal
+                            [enabled] => 1
+                            [translated_name] => PayPal
+                            [note] => 
+                            [method_change_possible] => 1
+                        )
+
+                    [6] => Array
+                        (
+                            [id] => 21
+                            [code] => PAYCONIQ
+                            [requires_credit_card] => 
+                            [event_tracking_code] => payconiq
+                            [icon] => payconiq
+                            [enabled] => 1
+                            [translated_name] => Payconiq
+                            [note] => 
+                            [method_change_possible] => 1
+                        )
+
+                    [7] => Array
+                        (
+                            [id] => 12
+                            [code] => P24
+                            [requires_credit_card] => 
+                            [event_tracking_code] => p24
+                            [icon] => p24
+                            [enabled] => 1
+                            [translated_name] => Przelewy24
+                            [note] => 
+                            [method_change_possible] => 1
+                        )
+
+                    [8] => Array
+                        (
+                            [id] => 18
+                            [code] => BLIK_DIRECT
+                            [requires_credit_card] => 
+                            [event_tracking_code] => blik_direct
+                            [icon] => blik
+                            [enabled] => 1
+                            [translated_name] => Blik
+                            [note] => 
+                            [method_change_possible] => 1
+                        )
+
+                    [9] => Array
+                        (
+                            [id] => 9
+                            [code] => IDEAL
+                            [requires_credit_card] => 
+                            [event_tracking_code] => ideal
+                            [icon] => ideal
+                            [enabled] => 1
+                            [translated_name] => iDeal
+                            [note] => 
+                            [method_change_possible] => 1
+                        )
+
+                    [10] => Array
+                        (
+                            [id] => 11
+                            [code] => WALLET
+                            [requires_credit_card] => 
+                            [event_tracking_code] => wallet
+                            [icon] => wallet
+                            [enabled] => 1
+                            [translated_name] => Portfela Vinted
+                            [note] => 
+                            [method_change_possible] => 
+                        )
+
+                )
+
+            [localization] => none
+            [is_bpf_price_prominence_applied] => 1
+        )
+
+    [price] => Array
+        (
+            [amount] => 12.0
+            [currency_code] => PLN
+        )
+
+    [discount_price] => 
+    [service_fee] => 3.5
+    [total_item_price] => 15.5
+    [can_edit] => 
+    [can_delete] => 
+    [can_reserve] => 
+    [can_mark_as_sold] => 
+    [can_transfer] => 
+    [instant_buy] => 1
+    [can_close] => 
+    [can_buy] => 1
+    [can_bundle] => 1
+    [can_ask_seller] => 1
+    [can_favourite] => 
+    [user_login] => ciucherek
+    [city_id] => 14049
+    [city] => Wąchock
+    [country] => Poland
+    [promoted] => 
+    [is_mobile] => 
+    [bump_badge_visible] => 
+    [brand_dto] => Array
+        (
+            [id] => 1
+            [title] => 
+            [slug] => emptybrand
+            [favourite_count] => 29377
+            [pretty_favourite_count] => 29.4K
+            [item_count] => 168792158
+            [pretty_item_count] => 168.8M
+            [is_visible_in_listings] => 
+            [requires_authenticity_check] => 
+            [is_luxury] => 
+            [path] => /brand/1-emptybrand
+            [url] => https://www.vinted.pl/brand/1-emptybrand
+            [is_favourite] => 
+        )
+
+    [path] => /items/3743423292-kapciuszki-dla-malucha
+    [url] => https://www.vinted.pl/items/3743423292-kapciuszki-dla-malucha
+    [accepted_pay_in_methods] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [code] => CREDIT_CARD
+                    [requires_credit_card] => 1
+                    [event_tracking_code] => cc
+                    [icon] => credit-card
+                    [enabled] => 1
+                    [translated_name] => Karta płatnicza
+                    [note] => Osoba sprzedająca nie zobaczy twoich danych płatniczych.
+                    [method_change_possible] => 1
+                )
+
+            [1] => Array
+                (
+                    [id] => 12
+                    [code] => P24
+                    [requires_credit_card] => 
+                    [event_tracking_code] => p24
+                    [icon] => p24
+                    [enabled] => 1
+                    [translated_name] => Przelewy24
+                    [note] => 
+                    [method_change_possible] => 1
+                )
+
+            [2] => Array
+                (
+                    [id] => 18
+                    [code] => BLIK_DIRECT
+                    [requires_credit_card] => 
+                    [event_tracking_code] => blik_direct
+                    [icon] => blik
+                    [enabled] => 1
+                    [translated_name] => Blik
+                    [note] => 
+                    [method_change_possible] => 1
+                )
+
+        )
+
+    [created_at] => dziś 15:15
+    [color1] => Granatowy
+    [color2] => 
+    [description_attributes] => Array
+        (
+        )
+
+    [video_game_rating] => 
+    [status] => Bardzo dobry
+    [is_favourite] => 
+    [performance] => 
+    [stats_visible] => 
+    [can_push_up] => 
+    [can_vas_gallery_promote] => 
+    [vas_gallery_promoted] => 
+    [badge] => 
+    [size_guide_faq_entry_id] => 512
+    [localization] => none
+    [is_upload_story_button_visible] => 
+    [offline_verification] => 
+    [offline_verification_fee] => 
+    [icon_badges] => Array
+        (
+        )
+
+)

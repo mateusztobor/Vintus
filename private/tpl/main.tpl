@@ -48,7 +48,7 @@
 									<a class="nav-link<?php Flight::checkCurrentApp('/start',' active'); ?>" aria-current="page" href="<?php print(Flight::getConfig('url')); ?>/"><i class="fa-solid fa-magnifying-glass"></i> Szukaj produktów</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link<?php Flight::checkCurrentApp('/kreacje',' active'); ?>" aria-current="page" href="<?php print(Flight::getConfig('url')); ?>/<?php print(Flight::isAuthorized('logged') ? 'moje-kreacje' : 'logowanie'); ?>"><i class="fa-solid fa-person-dress-burst"></i> Moje kreacje</a>
+									<a class="nav-link<?php Flight::checkCurrentApp('/moje-kreacje',' active'); ?>" aria-current="page" href="<?php print(Flight::getConfig('url')); ?>/<?php print(Flight::isAuthorized('logged') ? 'moje-kreacje' : 'logowanie'); ?>"><i class="fa-solid fa-person-dress-burst"></i> Moje kreacje</a>
 								</li>
 							</ul>
 							<div class="navbar-text d-flex justify-content-center">

@@ -23,10 +23,6 @@
 				'SET SQL_MODE=ANSI_QUOTES'
 			]
 	)));
-	Flight::setConfig('smsplanet', [
-		'key' => '16e8f155-c141-4ba1-bd21-c44efda78450',
-		'password' => 'D7lXM2ib5yaRWdy@'
-	]);
 	//advanced
 	Flight::setConfig('debug', 1);
 ?>
