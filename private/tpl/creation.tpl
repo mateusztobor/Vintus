@@ -1,6 +1,6 @@
 
-<h1 class="fw-normal mb-4">Kreacja</h1>
-<h2><?php print($basket['name']); ?></h2>
+<h1 class="fw-normal mb-0 h5">Kreacja</h1>
+<h2 class="mb-4"><?php print($basket['name']); ?></h2>
 <div class="fb-like" data-href="<?php print(Flight::getConfig('url')); ?>/kreacja/<?php print($basket['basket_id']); ?>" data-width="" data-layout="" data-action="" data-size="" data-share="false"></div><br>
 <small><i class="fa-solid fa-arrows-rotate"></i> Ostatnia aktualizacja: <?php print(Flight::formatDate($basket['lastmod'])); ?></small><br>
 <small><i class="fa-solid fa-user"></i> <?php print($basket['nick']); ?></small>
@@ -39,9 +39,10 @@
 	<script async src="https://static.addtoany.com/menu/page.js"></script>
 	<!-- AddToAny END -->
 </div>
-<h4>Komentarze</h4>
-<div class="fb-comments mx-auto" data-href="<?php print(Flight::getConfig('url')); ?>/kreacja/<?php print($basket['basket_id']); ?>" data-width="" data-numposts="10"></div>
-
+<h4 class="text-center mt-4">Komentarze</h4>
+<div class="text-center">
+	<div class="fb-comments" data-href="<?php print(Flight::getConfig('url')); ?>/kreacja/<?php print($basket['basket_id']); ?>" data-width="" data-numposts="10"></div>
+</div>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v18.0&appId=1944971825565097" nonce="6MILBxsR"></script>
 
