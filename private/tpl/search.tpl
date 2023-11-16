@@ -176,7 +176,7 @@
 		</div>
 	</div>
 </div>
-<div id="search"></div>
+<div id="search" style="display: flex; flex-wrap: wrap; justify-content: center;"></div>
 <div class="text-center alert bg-body-secondary h3 fw-normal d-none" id="search_loading">
 	<div class="spinner-border" style="width: 3rem;height: 3rem;" role="status">
 		<span class="visually-hidden">Wczytywanie...</span>

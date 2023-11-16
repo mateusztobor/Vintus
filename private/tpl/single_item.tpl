@@ -1,6 +1,6 @@
 <?php if(isset($item)) { ?>
-		<div class="row rounded mb-4 text-dark" style="background: #cae1e4;">
-			<div class="col-12 col-md-4 p-0 d-flex align-items-center justify-content-center position-relative">
+		<div class="row rounded mb-4 text-dark" style="background: #cae1e4; max-width: 480px; margin: 12px">
+			<div class="p-0 d-flex align-items-center justify-content-center position-relative" style="max-width: 50%">
 				<?php
 					$in_card=false;
 					$photo = Flight::getConfig('url').'/public/img/vinter.jpg';
@@ -16,9 +16,9 @@
 				?>
 				<img src="<?php print($photo); ?>" alt="" class="img-fluid rounded">
 			</div>
-			<div class="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
-				<div class="pt-3 pb-3 pe-3">
-					<h2 class="text-transform-none fw-bold"><?php print($item['title']); ?></h2>
+			<div class=" text-center d-flex align-items-center justify-content-center"  style="max-width: 50%;">
+				<div class="pt-3 pb-3 pe-3" style=" padding: .5rem .5rem .5rem 0 !important">
+					<h5 class="text-transform-none fw-bold"><?php print($item['title']); ?></h2>
 					<div style="display: flex; justify-content: center;"><div class="h6 text-transform-none" style="text-align: left">
 						<i class="fa-solid fa-heart"></i> <?php print($item['favourite_count']); ?>
 						
@@ -35,7 +35,7 @@
 						<?php print(empty($item['user']['business']) ? 'Osoba prywatna' : 'Firma'); ?> 
 					</div>
 					<div class="h5"><i class="fa-solid fa-money-bill-wave"></i> <?php print(Flight::formatCurrency($item['total_item_price'], $item['currency'])); ?></div>
-					<div class="h6 fw-normal">w tym <?php print(Flight::formatCurrency($item['service_fee'], $item['currency'])); ?> opłaty serwisowej</div>
+					<div class="h6 fw-normal" style="font-size: .7rem">w tym <?php print(Flight::formatCurrency($item['service_fee'], $item['currency'])); ?> opłaty serwisowej</div>
 					<div class="mt-4">
 						<?php if(Flight::isAuthorized('logged') && !$in_card) { ?>
 							<button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#itemModal" onclick="setItem(<?php print($item['id']); ?>);"><i class="fa-solid fa-shirt"></i> Dodaj do kreacji</button>
