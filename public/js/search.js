@@ -10,9 +10,6 @@ function reloadSearch() {
 		document.getElementById("zac").classList.add("d-none");
 		noE=true;
 	}
-	
-	
-		
 	window.scrollTo({top: 0, behavior: 'smooth'});
 	search_loadingPosts = false;
 	search_end = false;
@@ -64,7 +61,8 @@ function search() {
     search_loadingPosts = true;  // Ustaw, że teraz zaczyna się ładowanie
 	
 	// Pobierz wartości z pól formularza
-	var search_text = document.getElementById("search_text").value;
+	//var search_text = document.getElementById("search_text").value;
+	document.activeElement.blur();
 	//var category = document.getElementById("inputCategory").value;
 	// Pobierz inne wartości z innych pól formularza
 
