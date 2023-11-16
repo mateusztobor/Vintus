@@ -89,7 +89,8 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-lg-6 text-lg-start text-center text-body-secondary">
-						© VintUŚ
+						© VintUŚ<br>
+						<small>Aplikacja jest jedynie prezentacją projektu stworzonego w celach edukacyjnych.</small>
 					</div>
 				</div>
 			</div>
