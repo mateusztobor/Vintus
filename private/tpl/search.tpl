@@ -140,12 +140,12 @@
 	<div class="col-md-6">
 		<img src="<?php print(Flight::getConfig('url')); ?>/public/img/vinter.jpg" class="w-100 rounded-circle box-shadow" alt="">
 	</div>
-	<div class="col-md-6 text-center" style="font-family: Garamond, serif;">
+	<div class="col-md-6 text-center" >
 		<div class="display-4">
-			Bądź <span class="fw-bold" style="color: #007782;">COOL</span> dzięki<br>
+			Bądź <span class="fw-bold" style="font-family: Garamond, serif; color: #007782;">COOL</span> dzięki<br>
 			<img src="<?php print(Flight::getConfig('url')); ?>/public/img/logo.png" alt="Vintuś" style="height:64px;">
 		</div>
-		<div class="h4 text-primary mt-4">Twórz własne kreacje i dziel się nimi!</div>
+		<div class="h4 mt-4" style=" font-size:calc(1rem + .3vw)">Twórz własne kreacje i dziel się nimi!</div>
 	</div>
 </div>
 <div class="modal fade modal-lg" id="itemModal" tabindex="-1" aria-hidden="true">

@@ -1,5 +1,5 @@
 <?php if(isset($item)) { ?>
-		<div class="row rounded mb-4 text-dark" style="background: #96f0fb;">
+		<div class="row rounded mb-4 text-dark" style="background: #cae1e4;">
 			<div class="col-12 col-md-4 p-0 d-flex align-items-center justify-content-center position-relative">
 				<?php
 					$in_card=false;
@@ -19,19 +19,19 @@
 			<div class="col-12 col-md-8 text-center d-flex align-items-center justify-content-center">
 				<div class="pt-3 pb-3 pe-3">
 					<h2 class="text-transform-none fw-bold"><?php print($item['title']); ?></h2>
-					<div class="h6 text-transform-none">
+					<div style="display: flex; justify-content: center;"><div class="h6 text-transform-none" style="text-align: left">
 						<i class="fa-solid fa-heart"></i> <?php print($item['favourite_count']); ?>
 						
-						<?php if(isset($item['size_title'])) { ?>
-							<i class="fa-solid fa-maximize ms-3"></i> <?php print($item['size_title']); ?>
+						<?php if(isset($item['size_title']) && $item['size_title'] !== "") { ?>
+							<br /><i class="fa-solid fa-maximize"></i> <?php print($item['size_title']); ?>
 						<?php } ?>
 						
-						<?php if(isset($item['brand_title'])) { ?>
-							<span class="d-block d-md-inline text-transform-none"><i class="fa-solid fa-award ms-3"></i> <?php print($item['brand_title']); ?></span>
+						<?php if(isset($item['brand_title']) && $item['brand_title'] !== "") { ?>
+							<br /><span class="d-block d-md-inline text-transform-none"><i class="fa-solid fa-award"></i> <?php print($item['brand_title']); ?></span>
 						<?php } ?>
-					</div>
+					</div></div>
 					<div class="h6 text-transform-none">
-						Możliwa wymiana: <?php print(empty($item['is_for_swap']) ? 'Nie' : 'Tak'); ?> 
+						Możliwa wymiana: <?php print(empty($item['is_for_swap']) ? 'Nie' : 'Tak');?><br />
 						<?php print(empty($item['user']['business']) ? 'Osoba prywatna' : 'Firma'); ?> 
 					</div>
 					<div class="h5"><i class="fa-solid fa-money-bill-wave"></i> <?php print(Flight::formatCurrency($item['total_item_price'], $item['currency'])); ?></div>
