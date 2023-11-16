@@ -14,10 +14,10 @@
 					[2,'Brązowy'],
 					[3,'Szary'],
 					[4,'Beżowy'],
-					[5, 'Różowy'],
+					[5,'Różowy'],
 					[6,'Fioletowy'],
-					[7,'Czerwony],
-					[8,'Żółty']
+					[7,'Czerwony'],
+					[8,'Żółty'],
 					[9,'Niebieski'],
 					[10,'Zielony'],
 					[11,'Pomarańczowy'],
@@ -27,8 +27,8 @@
 					[15,'Wielokolorowe'],
 					[16,'Khaki'],
 					[17,'Turkusowy'],
-					[18,''],
-					[19,''],
+					//[18,''],
+					//[19,''],
 					[20,'Kremowy'],
 					[21,'Morelowy'],
 					[22,'Koralowy'],
@@ -39,7 +39,7 @@
 					[27,'Granatowy'],
 					[28,'Ciemny Zielony'],
 					[29,'Musztardowy'],
-					[30,'Miętowy'],
+					[30,'Miętowy']
 
 				];
 			?>
