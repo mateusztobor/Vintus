@@ -43,7 +43,7 @@
 
 				];
 			?>
-			<ul class="dropdown-menu">
+			<ul class="dropdown-menu" style="overflow-y: scroll;max-height: 50vh;">
 				<?php foreach($filter_colors as $filter) { ?>
 					<li class="py-2 px-1">
 						<div class="form-check d-block">
