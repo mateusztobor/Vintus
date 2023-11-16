@@ -85,7 +85,7 @@
 				?>
 			</div>
 		</main>
-		<footer class="footer mt-auto py-3 bg-body-tertiary">
+		<footer class="footer mt-auto py-3 bg-body-tertiary d-none d-lg-block">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-lg-6 text-lg-start text-center text-body-secondary">
