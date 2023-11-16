@@ -42,6 +42,28 @@
 					[30,'Miętowy']
 
 				];
+	$filter_materials = [
+							//[ID,NAZWA],
+							[1,'Ceramika'],
+							[2,'Bawełna'],
+							[3,'Szkło'],
+							[4,'Metal'],
+							[5,'Plastik'],
+							[6,'Poliester'],
+							[7,'Porcelana'],
+							[8,'Drewno'],
+							[9,'Srebro'],
+							[10,'Stal'],
+							[11,'Akryl'],
+							[12,'Bambus'],
+							[13,'Szyfon'],
+							[14,'Len'],
+							[15,'Nylon'],
+							[16,'Satyna'],
+							[17,'Jedwab'],
+							[18,'Wiskoza'],
+							[19,'Wełna'],
+							[20,'Inne']
 			?>
 			<ul class="dropdown-menu" style="overflow-y: scroll;max-height: 50vh;">
 				<?php foreach($filter_colors as $filter) { ?>
@@ -50,6 +72,18 @@
 							<label class="d-block" for="color_<?php print($filter[0]); ?>">
 								<input class="form-check-input filter_colors" type="checkbox" value="<?php print($filter[0]); ?>" id="color_<?php print($filter[0]); ?>" onchange="reloadSearch();">
 								<?php print($filter[1]); ?>
+							</label>
+						</div>
+					</li>
+				<?php } ?>
+			</ul>
+			<ul class="dropdown-menu">
+				<?php foreach($filter_materials as $material) { ?>
+					<li class="py-2 px-1">
+						<div class="form-check d-block">
+							<label class="d-block" for="material_<?php print($fmaterial[0]); ?>">
+								<input class="form-check-input filter_materials" type="checkbox" value="<?php print($material[0]); ?>" id="material_<?php print($material[0]); ?>" onchange="reloadSearch();">
+								<?php print($material[1]); ?>
 							</label>
 						</div>
 					</li>
