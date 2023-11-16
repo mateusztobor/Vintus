@@ -11,7 +11,36 @@
 				$filter_colors = [
 					//[ID,NAZWA],
 					[1,'Czarny'],
+					[2,'Brązowy'],
+					[3,'Szary'],
+					[4,'Beżowy'],
+					[5, 'Różowy'],
+					[6,'Fioletowy'],
+					[7,'Czerwony],
+					[8,'Żółty']
 					[9,'Niebieski'],
+					[10,'Zielony'],
+					[11,'Pomarańczowy'],
+					[12,'Biały'],
+					[13,'Srebny'],
+					[14,'Złoty'],
+					[15,'Wielokolorowe'],
+					[16,'Khaki'],
+					[17,'Turkusowy'],
+					[18,''],
+					[19,''],
+					[20,'Kremowy'],
+					[21,'Morelowy'],
+					[22,'Koralowy'],
+					[23,'Burgundowy'],
+					[24,'Róż'],
+					[25,'Liliowy'],
+					[26,'Jasny Niebieski'],
+					[27,'Granatowy'],
+					[28,'Ciemny Zielony'],
+					[29,'Musztardowy'],
+					[30,'Miętowy'],
+
 				];
 			?>
 			<ul class="dropdown-menu">
