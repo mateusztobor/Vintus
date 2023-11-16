@@ -76,6 +76,7 @@ function search() {
 	searchParams.append("p", search_page);
 	searchParams2 = searchParams.toString();
 	searchParams2 = addFilterCollection(searchParams2, 'filter_colors', 'color_ids[]');
+	searchParams2 = addFilterCollection(searchParams2, 'filter_materials', 'material_ids[]');
 	//tutaj 3ba dodać kolejne klasy fitrowania
 	
 	//alert(searchParams2);
