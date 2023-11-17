@@ -4,7 +4,7 @@
 <div class="fb-like" data-href="<?php print(Flight::getConfig('url')); ?>/kreacja/<?php print($basket['basket_id']); ?>" data-width="" data-layout="" data-action="" data-size="" data-share="false"></div><br>
 <small><i class="fa-solid fa-arrows-rotate"></i> Ostatnia aktualizacja: <?php print(Flight::formatDate($basket['lastmod'])); ?></small><br>
 <small><i class="fa-solid fa-user"></i> <?php print($basket['nick']); ?></small>
-<div id="items" style="display: flex; flex-wrap: wrap; justify-content: center;"></div>
+<div id="items" style="display: flex; flex-wrap: wrap; justify-content: center;">
 	<?php
 		$x=0;
 		foreach($items as $item) { 
@@ -14,6 +14,12 @@
 			else $x++;
 		}
 	?>
+	
+	<?php if(count($items) == 0) { ?>
+		<div class="text-center my-3">
+			<img src="<?php print(Flight::getConfig('url')); ?>/public/img/kuc33.png" alt="" class="w-100 rounded-circle">
+		</div>
+	<?php } ?>
 </div>
 <?php if($x > 0) { ?>
 	<div class="alert alert-info mt-4 mx-5"><?php print($x); ?> przedmiotów nie zostało wyświetlonych, ponieważ zostały one usunięte z Vinted.</div>

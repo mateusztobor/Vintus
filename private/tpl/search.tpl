@@ -143,7 +143,9 @@
 	<div class="col-md-6 text-center" >
 		<div class="display-4">
 			Bądź <span class="fw-bold" style="font-family: Garamond, serif; color: #007782;">COOL</span> dzięki<br>
-			<img src="<?php print(Flight::getConfig('url')); ?>/public/img/logo.png" alt="Vintuś" style="height:64px;">
+			<img src="<?php print(Flight::getConfig('url')); ?>/public/img/logo.png" alt="Vintuś" style="height:64px;"><br>
+			
+			<img src="<?php print(Flight::getConfig('url')); ?>/public/img/kuc22.png" alt="Vintuś" style="height:192px;">
 		</div>
 		<div class="h4 mt-4" style=" font-size:calc(1rem + .3vw)">Twórz własne kreacje i dziel się nimi!</div>
 	</div>

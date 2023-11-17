@@ -3,3 +3,6 @@
 	<a href="<?php print(Flight::getConfig('url')); ?>" class="btn btn-dark bg-gradient"><i class="fa-solid fa-chevron-left"></i> Powrót do strony startowej</a>
 </div>
 <div class="alert alert-info" role="alert">Ta zawartość nie istnieje lub nie masz do niej dostępu.</div>
+<div class="text-center">
+	<img src="<?php print(Flight::getConfig('url')); ?>/public/img/kuc.png" alt="" class="w-100">
+</div>
