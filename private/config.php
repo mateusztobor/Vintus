@@ -24,5 +24,5 @@
 			]
 	)));
 	//advanced
-	Flight::setConfig('debug', 1);
+	Flight::setConfig('debug', 0);
 ?>
