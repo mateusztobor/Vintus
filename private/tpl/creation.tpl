@@ -16,10 +16,10 @@
 	?>
 </div>
 <?php if($x > 0) { ?>
-	<div class="alert alert-info"><?php print($x); ?> przedmiotów nie zostało wyświetlonych, ponieważ zostały one usunięte z Vinted.</div>
+	<div class="alert alert-info mt-4 mx-5"><?php print($x); ?> przedmiotów nie zostało wyświetlonych, ponieważ zostały one usunięte z Vinted.</div>
 <?php } ?>
 
-<div class="my-3 py-3 rounded" style="background:#dedede;">
+<div class="mx-5 my-3 py-3 rounded" style="background:#dedede;">
 	<div class="text-center lh-sm mb-3">
 		<i class="fa-solid fa-share"></i><br>Kreacja się spodobała?<br>Udostępnij ją swoim znajomym!
 	</div>

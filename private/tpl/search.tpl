@@ -157,7 +157,7 @@
 			</div>
 			<div class="modal-body">
 				<input type="hidden" value="" id="item_id">
-				<label for="baskets" class="form-label">Wybierz kreację do której dodać przedmiot</label>
+				<label for="basket_id" class="form-label">Wybierz kreację do której dodać przedmiot</label>
 				<?php if(count($baskets) == 0) { ?>
 					<div class="alert alert-warning">Wygląda na to, że nie utworzyłeś jeszcze żadnej kreacji.</div>
 				<?php } else { ?>

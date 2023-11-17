@@ -1,5 +1,5 @@
 <?php if(isset($item)) { ?>
-		<div class="row rounded mb-4 text-dark" style="background: #cae1e4; max-width: 480px; margin: 12px">
+		<div class="row rounded mb-4 text-dark" style="background: #cae1e4; max-width: 480px; margin: 12px;">
 			<div class="p-0 d-flex align-items-center justify-content-center position-relative" style="max-width: 50%">
 				<?php
 					$in_card=false;
@@ -18,7 +18,7 @@
 			</div>
 			<div class=" text-center d-flex align-items-center justify-content-center"  style="max-width: 50%;">
 				<div class="pt-3 pb-3 pe-3" style=" padding: .5rem .5rem .5rem 0 !important">
-					<h5 class="text-transform-none fw-bold"><?php print($item['title']); ?></h2>
+					<h5 class="text-transform-none fw-bold"><?php print($item['title']); ?></h5>
 					<div style="display: flex; justify-content: center;"><div class="h6 text-transform-none" style="text-align: left">
 						<i class="fa-solid fa-heart"></i> <?php print($item['favourite_count']); ?>
 						
@@ -31,7 +31,7 @@
 						<?php } ?>
 					</div></div>
 					<div class="h6 text-transform-none">
-						Możliwa wymiana: <?php print(empty($item['is_for_swap']) ? 'Nie' : 'Tak');?><br />
+						Możliwa wymiana: <?php print(empty($item['is_for_swap']) ? 'Nie' : 'Tak');?><br>
 						<?php print(empty($item['user']['business']) ? 'Osoba prywatna' : 'Firma'); ?> 
 					</div>
 					<div class="h5"><i class="fa-solid fa-money-bill-wave"></i> <?php print(Flight::formatCurrency($item['total_item_price'], $item['currency'])); ?></div>
