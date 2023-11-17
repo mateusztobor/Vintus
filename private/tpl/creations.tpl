@@ -1,5 +1,5 @@
 <h1 class="fw-normal mb-4">Moje kreacje</h1>
-<ul class="list-group" id="baskets"></ul>
+<ul class="list-group mb-4" id="baskets"></ul>
 <script>
 	function loadMyBaskets() {
 		var xhr = new XMLHttpRequest();

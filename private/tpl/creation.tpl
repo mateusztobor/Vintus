@@ -4,7 +4,7 @@
 <div class="fb-like" data-href="<?php print(Flight::getConfig('url')); ?>/kreacja/<?php print($basket['basket_id']); ?>" data-width="" data-layout="" data-action="" data-size="" data-share="false"></div><br>
 <small><i class="fa-solid fa-arrows-rotate"></i> Ostatnia aktualizacja: <?php print(Flight::formatDate($basket['lastmod'])); ?></small><br>
 <small><i class="fa-solid fa-user"></i> <?php print($basket['nick']); ?></small>
-<div id="items" class="my-4">
+<div id="items" style="display: flex; flex-wrap: wrap; justify-content: center;"></div>
 	<?php
 		$x=0;
 		foreach($items as $item) { 

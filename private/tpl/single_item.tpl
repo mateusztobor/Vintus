@@ -36,7 +36,7 @@
 					</div>
 					<div class="h5"><i class="fa-solid fa-money-bill-wave"></i> <?php print(Flight::formatCurrency($item['total_item_price'], $item['currency'])); ?></div>
 					<div class="h6 fw-normal" style="font-size: .7rem">w tym <?php print(Flight::formatCurrency($item['service_fee'], $item['currency'])); ?> opłaty serwisowej</div>
-					<div class="mt-4">
+					<div class="mt-4 d-grid gap-2">
 						<?php if(Flight::isAuthorized('logged') && !$in_card) { ?>
 							<button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#itemModal" onclick="setItem(<?php print($item['id']); ?>);"><i class="fa-solid fa-shirt"></i> Dodaj do kreacji</button>
 						<?php } ?>
